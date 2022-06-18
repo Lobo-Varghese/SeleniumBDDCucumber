@@ -11,7 +11,7 @@ public class DriverFactory {
 
 	
 	public WebDriver driver;
-	
+	//test git
 	//to run the feature in parallel mode
 	public static ThreadLocal<WebDriver> tldriver = new ThreadLocal<>();
 	
