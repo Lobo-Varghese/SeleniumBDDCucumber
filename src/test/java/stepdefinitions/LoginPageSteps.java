@@ -16,10 +16,7 @@ public class LoginPageSteps {
 	private Properties prop = configReader.init_prop();
 	private static String title;
 
-	//public void getProperty() {
-		//configReader =
-		//prop = 
-	//}
+
 
 	@Given("user is on login page")
 	public void user_is_on_login_page() {
