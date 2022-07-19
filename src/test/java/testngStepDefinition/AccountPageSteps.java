@@ -34,8 +34,7 @@ public class AccountPageSteps {
 	    
 	    
 	    try {
-			accountPage = loginPage.doLogin(username, password);
-			
+			accountPage = loginPage.doLogin(username, password);			
 		} catch (InterruptedException e) {
 			
 			e.printStackTrace();
