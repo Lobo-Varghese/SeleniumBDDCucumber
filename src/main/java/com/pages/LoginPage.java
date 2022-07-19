@@ -43,9 +43,10 @@ public class LoginPage {
 		driver.findElement(signInButton).click();
 	}
 	
-	public AccountPage doLogin(String un, String pwd) {
+	public AccountPage doLogin(String un, String pwd) throws InterruptedException {
 		driver.findElement(emailId).sendKeys(un);
 		driver.findElement(password).sendKeys(pwd);
+		Thread.sleep(3000);
 		driver.findElement(signInButton).click();
 		
 		return new AccountPage(driver);
