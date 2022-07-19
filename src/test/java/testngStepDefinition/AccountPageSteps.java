@@ -30,8 +30,7 @@ public class AccountPageSteps {
 		DriverFactory.getDriver().get(prop.getProperty("url"));
 		List<Map<String,String>> credList = credTable.asMaps();
 	    String username = credList.get(0).get("username");
-	    String password = credList.get(0).get("password");
-	    
+	    String password = credList.get(0).get("password");	    
 	    
 	    try {
 			accountPage = loginPage.doLogin(username, password);			
