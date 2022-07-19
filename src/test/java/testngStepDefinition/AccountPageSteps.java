@@ -42,6 +42,7 @@ public class AccountPageSteps {
 	@Given("user is on Accounts Page")
 	public void user_is_on_accounts_page() {
 	   accountPage.getAccountsPageTitle();
+	   
 	   }
 
 	@Then("user gets account section")
