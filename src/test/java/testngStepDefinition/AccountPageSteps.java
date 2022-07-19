@@ -35,8 +35,7 @@ public class AccountPageSteps {
 	    
 	    try {
 			accountPage = loginPage.doLogin(username, password);			
-		} catch (InterruptedException e) {
-			
+		} catch (InterruptedException e) {			
 			e.printStackTrace();
 		}
 	}
@@ -44,7 +43,7 @@ public class AccountPageSteps {
 	@Given("user is on Accounts Page")
 	public void user_is_on_accounts_page() {
 	   accountPage.getAccountsPageTitle();
-	}
+	   }
 
 	@Then("user gets account section")
 	public void user_gets_account_section(DataTable sectionsTable) {
